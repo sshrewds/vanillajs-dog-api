@@ -32,6 +32,7 @@ form{
     grid-template-columns: 3fr 1fr;
 
     gap: 1em;
+    /* position: relative; */
 }
 
 
@@ -98,6 +99,12 @@ button:hover{
 ul{
     margin: 0;
     padding: 0;
+
+    position:absolute;
+    /* z-index: 1; */
+    display: block;
+    top: 4em;
+    width: 100%;
 }
 
 #result-search li{
@@ -105,7 +112,7 @@ ul{
     /* margin-right: 2em; */
     padding: 1em 2em;
     /* border-bottom: 1px dashed #333; */
-    background-color: rgb(255,255,255,0.9);
+    background-color: rgb(255,255,255,0.95);
     margin: 0;
     box-sizing: border-box;
     list-style: none;
@@ -121,3 +128,13 @@ ul{
     color: white;
 }
 
+#result-image{
+   margin-top: 1.5em; 
+   height: 300px;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}

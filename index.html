@@ -15,14 +15,20 @@
             <header>
                 <h1>DOG API</h1>
             </header>
-            <form>
 
-                <input id="input" type="text" placeholder="Breed..." value="" autocomplete="off">
+            <form id="dog-image-form" onsubmit="return false">
+
+                <div style="position:relative">
+                    <input id="input" type="text" placeholder="Breed..." value="" autocomplete="off">
+                    <ul id="result-search"></ul>
+                </div>
+
                 <button id="btn">Random Image</button>
-                <ul id="result-search"></ul>
-            </form>
 
+
+            </form>
             <div id="result-image"></div>
+
         </section>
 
         <footer>&copy;Michał Tomczyk, 2020</footer>
