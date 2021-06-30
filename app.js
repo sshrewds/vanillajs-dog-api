@@ -30,17 +30,12 @@ function handleSubmit(e) {
             .then(res => res.json())
             .then(value => {
                 let url = value.message;
-                // url = url.slice(0, -1);
-                console.log(url)
                 let output = `<img style="" src="${url}"/>`
-                console.log(output);
                 resultImage.innerHTML = output;
-
             });
     }
 
 }
-
 
 
 fetch('https://dog.ceo/api/breeds/list/all').
@@ -59,7 +54,5 @@ fetch('https://dog.ceo/api/breeds/list/all').
                 resultImage.innerHTML = "";
             drawListItems(filteredBreeds);
         }
-
-
     })
 

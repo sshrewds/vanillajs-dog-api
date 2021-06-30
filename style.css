@@ -32,7 +32,6 @@ form{
     grid-template-columns: 3fr 1fr;
 
     gap: 1em;
-    /* position: relative; */
 }
 
 
@@ -101,7 +100,7 @@ ul{
     padding: 0;
 
     position:absolute;
-    /* z-index: 1; */
+
     display: block;
     top: 4em;
     width: 100%;
@@ -109,9 +108,8 @@ ul{
 
 #result-search li{
     width:100%;
-    /* margin-right: 2em; */
     padding: 1em 2em;
-    /* border-bottom: 1px dashed #333; */
+
     background-color: rgb(255,255,255,0.95);
     margin: 0;
     box-sizing: border-box;
@@ -135,6 +133,6 @@ ul{
 
 img{
     max-width: 100%;
-    height:auto;
+    max-height: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
